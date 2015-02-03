@@ -85,7 +85,7 @@ Value getinfo(const Array& params, bool fHelp)
     obj.push_back(Pair("paytxfee",      ValueFromAmount(nTransactionFee)));
 #endif
     obj.push_back(Pair("relayfee",      ValueFromAmount(CTransaction::nMinRelayTxFee)));
-    obj.push_back(Pair("moon",          "True"));
+    obj.push_back(Pair("moon",          "true"));
     obj.push_back(Pair("errors",        GetWarnings("statusbar")));
     return obj;
 }
